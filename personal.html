@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessify - Profile</title>
+    <link rel="stylesheet" href="personal.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Welcome to Your Profile, User!</h1>
+        </header>
+
+        <section class="wallet-section">
+            <h2>Wallet Balance: ₹<span id="wallet-balance">5000</span></h2>
+            <div class="wallet-actions">
+                <button onclick="addMoney()">Add Money</button>
+                <button onclick="withdrawMoney()">Withdraw Money</button>
+            </div>
+        </section>
+
+        <section class="match-history">
+            <h2>Match History</h2>
+            <ul id="history-list">
+                <li>Win vs Player123</li>
+                <li>Loss vs PlayerX</li>
+                <li>Win vs PlayerY</li>
+            </ul>
+        </section>
+
+        <section class="leaderboard">
+            <h2>Your Leaderboard</h2>
+            <table>
+                <tr>
+                    <th>Rank</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2200</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>1800</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="matchmaking">
+            <h2>Matchmaking</h2>
+            <button onclick="randomMatch()">Find Random Match</button>
+            <button onclick="generateLink()">Play with Friend</button>
+            <input type="text" id="match-link" readonly placeholder="Your match link will appear here">
+        </section>
+    </div>
+
+    <script src="personal.js"></script>
+</body>
+</html>
